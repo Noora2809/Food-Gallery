@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+}
+
+body{
+    background-color: black;
+}
+
+nav{
+    background-color: rgb(15, 3, 17);
+    height: 100px;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav h1{
+    margin: 60px;
+}
+
+
+nav ul li{
+    margin: 40px;
+}
+
+nav ul li:hover{
+    color: rgb(165, 159, 42);
+}
+
+.banner{
+    width: 1500px;
+    height: 700px;
+    background-image: url('https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_1280,ar_16:9/v1/img/recipes/24/25/3/l3Fx6AnTcGOjhwYNhggo_0S9A9332.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.overlay{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    color: white;
+    text-shadow: 2px 4px 8px rgb(15, 9, 2);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;   
+}
+
+.overlay button{
+    margin-left: 90px;
+    font-size: large;
+    background-color: white;
+    padding: 10px;
+    border-style: inherit;
+    border-radius: 8px;
+}
+
+.overlay button:hover{
+    background-color: yellow;
+}
+
+.row1{
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.row1 .col1{
+    background-color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.row {
+    height: 700px; 
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    margin-bottom: 30px;
+}
+
+.col {
+    height: 600px;
+    width: 200px;
+    background-color: white;
+    border: 10px solid #c6ef0e;
+    margin: 60px;
+    padding: 30px;
+}
+
+.col h1,h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+p{
+    margin-bottom: 20px;
+    text-align: justify;
+
+}
+
+.col ul li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.col button{
+    text-align: center;
+    top: 30px;
+    background-color: black;
+    color: white;
+}
+.col button:hover{
+
+    background-color: #454838;
+}
+.spl{
+    height: 50px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+} 
+
+.frow{
+    background-color: black;
+    height: 300px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+   
+}
+.frow h1{
+    margin-top: 30px;
+
+}
+
+.fcol{
+    margin-top: 80px;
+}
+
+.fcol h2{
+    margin-bottom: 30px;
+}
+
+.fcol h2:hover{
+    color: yellow;
+}
+
+/* media query */
+
+@media screen and (max-width:400px){
+
+    *{
+        font-family: 'Times New Roman', Times, serif;
+
+    }
+
+    nav{
+        width: 1400px;
+        background-color: rgb(15, 3, 17);
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .banner{
+        width: 1400px;
+        height: 700px;
+    }
+
+
+    .row1{
+        width: 1400px;
+        margin-top: 40px;
+    }
+
+     .row{
+        background-color: black;
+        width: 1400px;
+        height: 3000px;
+        flex-direction: column;
+    }
+
+    .col{
+        height: 600px;
+        width: 800px;
+        margin-left: 23px;
+    } 
+
+    footer{
+        width: 1400px;
+    }
+
+}
+
+
+
+
