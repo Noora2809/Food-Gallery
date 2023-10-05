@@ -6,9 +6,9 @@
     font-family: 'Lora', serif;
 }
 
-body{
+/* body{
     background-color: black;
-}
+} */
 
 nav{
     background-color: rgb(15, 3, 17);
@@ -55,17 +55,13 @@ nav ul li:hover{
     font-size: 40px;   
 }
 
-.overlay button{
+.overlay select{
     margin-left: 90px;
     font-size: large;
     background-color: white;
     padding: 10px;
     border-style: inherit;
     border-radius: 8px;
-}
-
-.overlay button:hover{
-    background-color: yellow;
 }
 
 .row1{
@@ -156,8 +152,17 @@ p{
     margin-bottom: 30px;
 }
 
-.fcol h2:hover{
+
+.fcol ul li{
+    text-decoration: underline;
+}
+
+.fcol ul li:hover{
     color: yellow;
+}
+
+.fcol button:hover{
+    background-color: #c6ef0e;
 }
 
 /* media query */
@@ -170,38 +175,45 @@ p{
     }
 
     nav{
-        width: 1400px;
-        background-color: rgb(15, 3, 17);
-        margin: 0px;
-        padding: 0px;
+        width: 400px;
+        font-size: 10px;
     }
 
     .banner{
-        width: 1400px;
+        width: 400px;
         height: 700px;
     }
 
 
     .row1{
-        width: 1400px;
+        width: 400px;
+        height: auto;
         margin-top: 40px;
     }
 
      .row{
-        background-color: black;
-        width: 1400px;
-        height: 3000px;
+        width: 400px;
+        height: auto;
         flex-direction: column;
     }
 
     .col{
-        height: 600px;
-        width: 800px;
-        margin-left: 23px;
+        height: 500px;
+        width: 200px;
+        margin-left: 90px;
+
     } 
 
     footer{
-        width: 1400px;
+        width: 400px;
+    }
+
+    .fcol h{
+        margin-left:40px ;
+    }
+
+    .fcol h2{
+        font-size: small;
     }
 
 }
